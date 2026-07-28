@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Alef Beta Properties</title>
+<meta name="description" content="Get in touch with Alef Beta Properties — Limassol, Cyprus. Phone, email, and office address.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16.png">
+<link rel="apple-touch-icon" href="images/logo/favicon-48.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo"><img src="images/logo/logo-black.png" alt="Alef Beta Properties"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">MENU</button>
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-dropdown" tabindex="0">
+        <span>Projects</span>
+        <div class="dropdown-menu">
+          <a href="project-enaerios-residence.html">Enaerios Residence</a>
+          <a href="project-anexartisias-studios.html">Anexartisias Studios</a>
+          <a href="project-nachmani-9.html">Nachmani 9</a>
+          <a href="project-titanium-residence.html">Titanium Residence</a>
+          <a href="project-sapphire-garden.html">Sapphire Garden</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero frame on-dark">
+  <div class="wrap hero-inner">
+    <span class="coord">LIMASSOL, CYPRUS</span>
+    <h1>Let's talk.</h1>
+    <p class="lede">Whether you're an investor, a prospective resident, or exploring a project of your own — we'd like to hear from you.</p>
+  </div>
+</section>
+
+<section style="padding-bottom: 0;">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="eyebrow">PHONE</span>
+        <p><a href="tel:+35797796811">(357) 97 796811</a></p>
+      </div>
+      <div class="contact-card">
+        <span class="eyebrow">EMAIL</span>
+        <p><a href="mailto:info@alefbetaproperties.com">info@alefbetaproperties.com</a></p>
+      </div>
+      <div class="contact-card">
+        <span class="eyebrow">OFFICE</span>
+        <p>Origenous 2<br>Limassol, CY, 3035</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">SEND AN ENQUIRY</span>
+    <h2>Tell us about your project.</h2>
+    <form class="contact-form" action="mailto:info@alefbetaproperties.com" method="post" enctype="text/plain">
+      <div class="field">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">MESSAGE</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send message</button>
+      <p class="form-note">Opens your email app with this message pre-filled, addressed to info@alefbetaproperties.com.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="logo"><img src="images/logo/logo-white.png" alt="Alef Beta Properties"></p>
+      <p>Origenous 2<br>Limassol, CY, 3035</p>
+    </div>
+    <div>
+      <p><a href="tel:+35797796811">(357) 97 796811</a></p>
+      <p><a href="mailto:info@alefbetaproperties.com">info@alefbetaproperties.com</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="copyright">© Alef Beta Properties. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('main-nav');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+</body>
+</html>

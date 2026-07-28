@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Alef Beta Properties</title>
+<meta name="description" content="Alef Beta Properties is a premier real estate development firm based in Limassol, Cyprus, with over 40 years of combined industry experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16.png">
+<link rel="apple-touch-icon" href="images/logo/favicon-48.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo"><img src="images/logo/logo-black.png" alt="Alef Beta Properties"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">MENU</button>
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-dropdown" tabindex="0">
+        <span>Projects</span>
+        <div class="dropdown-menu">
+          <a href="project-enaerios-residence.html">Enaerios Residence</a>
+          <a href="project-anexartisias-studios.html">Anexartisias Studios</a>
+          <a href="project-nachmani-9.html">Nachmani 9</a>
+          <a href="project-titanium-residence.html">Titanium Residence</a>
+          <a href="project-sapphire-garden.html">Sapphire Garden</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero frame on-dark">
+  <div class="wrap hero-inner">
+    <span class="coord">LIMASSOL, CYPRUS</span>
+    <h1>Who we are.</h1>
+    <p class="lede">A premier real estate development firm, building Limassol's future one project at a time.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <span class="eyebrow">OUR STORY</span>
+      <h2>40+ years of experience, one clear standard.</h2>
+      <p>We are a premier real estate development firm based in Limassol, Cyprus, with over 40 years of experience in the industry. We have established ourselves as a trusted name in real estate development, specializing in creating exceptional residential and commercial properties.</p>
+      <p>We take pride in actively contributing to the development and transformation of Limassol's landscape — fuelling its growth and prosperity, project by project, building by building.</p>
+    </div>
+    <div>
+      <span class="eyebrow">OUR VISION</span>
+      <h2>Design, quality, and detail.</h2>
+      <p>We are passionate about crafting outstanding living spaces that blend contemporary design, quality build, and meticulous attention to detail. Our team of dedicated professionals — with expertise across architecture, construction, and project management — works tirelessly to deliver results that surpass our clients' expectations.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <span class="eyebrow">OUR EXPERTISE</span>
+    <h2>What we bring to every project.</h2>
+    <ul class="expertise" style="margin-top: 32px;">
+      <li>
+        <h3>Real Estate Project Supervision</h3>
+        <p>Project supervision from inception to completion, designed for a diverse clientele of global and foreign real estate investors. With our in-depth knowledge of Cyprus's real estate market, we enable you to achieve your project's objectives with minimal hands-on involvement.</p>
+      </li>
+      <li>
+        <h3>Real Estate Development Services</h3>
+        <p>Project planning, from conceptualization to feasibility studies — comprehensive oversight and management for construction and development projects across Cyprus.</p>
+      </li>
+      <li>
+        <h3>Building Management</h3>
+        <p>Total building maintenance — from repairs to landscaping — keeping every property in the condition our residents and clients expect.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta frame on-dark">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <a href="contact.html" class="btn">Contact us</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="logo"><img src="images/logo/logo-white.png" alt="Alef Beta Properties"></p>
+      <p>Origenous 2<br>Limassol, CY, 3035</p>
+    </div>
+    <div>
+      <p><a href="tel:+35797796811">(357) 97 796811</a></p>
+      <p><a href="mailto:info@alefbetaproperties.com">info@alefbetaproperties.com</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="copyright">© Alef Beta Properties. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('main-nav');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+</body>
+</html>

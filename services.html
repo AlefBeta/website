@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Alef Beta Properties</title>
+<meta name="description" content="Comprehensive property management services from Alef Beta Properties — project oversight, construction management, budgeting, tenant management, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16.png">
+<link rel="apple-touch-icon" href="images/logo/favicon-48.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo"><img src="images/logo/logo-black.png" alt="Alef Beta Properties"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">MENU</button>
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-dropdown" tabindex="0">
+        <span>Projects</span>
+        <div class="dropdown-menu">
+          <a href="project-enaerios-residence.html">Enaerios Residence</a>
+          <a href="project-anexartisias-studios.html">Anexartisias Studios</a>
+          <a href="project-nachmani-9.html">Nachmani 9</a>
+          <a href="project-titanium-residence.html">Titanium Residence</a>
+          <a href="project-sapphire-garden.html">Sapphire Garden</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero frame on-dark">
+  <div class="wrap hero-inner">
+    <span class="coord">LIMASSOL, CYPRUS</span>
+    <h1>Property management,<br>start to finish.</h1>
+    <p class="lede">From meticulous project oversight and detailed documentation to expert construction and financial management — we cover every stage of property management.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">WHAT WE DO</span>
+    <h2>Our services.</h2>
+    <div class="service-grid service-grid-full">
+      <div class="service-card">
+        <h3>Project Oversight</h3>
+        <p>Comprehensive oversight from start to finish.</p>
+      </div>
+      <div class="service-card">
+        <h3>Project Documentation</h3>
+        <p>Detailed documentation of project progress.</p>
+      </div>
+      <div class="service-card">
+        <h3>Highest Standards</h3>
+        <p>Ensuring the highest quality standards and compliance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Project Planning</h3>
+        <p>From conceptualization to feasibility studies.</p>
+      </div>
+      <div class="service-card">
+        <h3>Construction Management</h3>
+        <p>Managing the entire construction process.</p>
+      </div>
+      <div class="service-card">
+        <h3>Budget Management</h3>
+        <p>Budget management and cost control of the project.</p>
+      </div>
+      <div class="service-card">
+        <h3>Property Finance &amp; Reporting</h3>
+        <p>Handling property finances and providing financial reports.</p>
+      </div>
+      <div class="service-card">
+        <h3>Tenant Management</h3>
+        <p>Tenant management, from screening to addressing concerns.</p>
+      </div>
+      <div class="service-card">
+        <h3>Rental Advisory</h3>
+        <p>A point of contact for tenant communication and rental guidance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta frame on-dark">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <a href="contact.html" class="btn">Contact us</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="logo"><img src="images/logo/logo-white.png" alt="Alef Beta Properties"></p>
+      <p>Origenous 2<br>Limassol, CY, 3035</p>
+    </div>
+    <div>
+      <p><a href="tel:+35797796811">(357) 97 796811</a></p>
+      <p><a href="mailto:info@alefbetaproperties.com">info@alefbetaproperties.com</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="copyright">© Alef Beta Properties. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('main-nav');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anexartisias Studios — Alef Beta Properties</title>
+<meta name="description" content="Anexartisias Studios: 18 stylish studio apartments in the heart of Limassol's old city, from Alef Beta Properties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16.png">
+<link rel="apple-touch-icon" href="images/logo/favicon-48.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo"><img src="images/logo/logo-black.png" alt="Alef Beta Properties"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">MENU</button>
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-dropdown" tabindex="0">
+        <span>Projects</span>
+        <div class="dropdown-menu">
+          <a href="project-enaerios-residence.html">Enaerios Residence</a>
+          <a href="project-anexartisias-studios.html">Anexartisias Studios</a>
+          <a href="project-nachmani-9.html">Nachmani 9</a>
+          <a href="project-titanium-residence.html">Titanium Residence</a>
+          <a href="project-sapphire-garden.html">Sapphire Garden</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="project-hero frame on-dark">
+  <img src="images/anexartisias-studios/Exterior_view020000_var1.jpg" alt="Anexartisias Studios exterior, Limassol old town">
+  <div class="project-hero-inner">
+    <span class="coord">LIMASSOL OLD TOWN</span>
+    <h1>Anexartisias Studios</h1>
+    <span class="status-tag">UNDER CONSTRUCTION</span>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <span class="eyebrow">THE PROJECT</span>
+      <h2>Luxury living in the heart of the old city.</h2>
+      <p>Welcome to Anexartisias Studios, where luxury living meets the heart of Limassol's old city. Our exclusive residential complex comprises 18 stylish studio apartments, a rooftop oasis with stunning views, secure gated access, and dedicated parking.</p>
+      <p>Nestled in a prime location, the property is surrounded by offices, entertainment venues, and leisure spots, all within walking distance of the beach and Limassol Marina. Experience modern comfort and cosmopolitan living at its finest.</p>
+    </div>
+    <div>
+      <span class="eyebrow">SPECIFICATIONS</span>
+      <table class="spec-table">
+        <tr><td>Apartments</td><td>18 studios</td></tr>
+        <tr><td>Amenities</td><td>Rooftop terrace, gated access, parking</td></tr>
+        <tr><td>Status</td><td>Under construction</td></tr>
+        <tr><td>Project type</td><td>New construction</td></tr>
+        <tr><td>Location</td><td>Limassol old town</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <span class="eyebrow">GALLERY</span>
+    <h2>A closer look.</h2>
+    <div class="gallery-grid">
+      <a href="images/anexartisias-studios/Project-2-3.jpg" target="_blank" rel="noopener"><img src="images/anexartisias-studios/Project-2-3.jpg" alt="Anexartisias Studios, view 1" loading="lazy"></a>
+      <a href="images/anexartisias-studios/Project-2-5.jpg" target="_blank" rel="noopener"><img src="images/anexartisias-studios/Project-2-5.jpg" alt="Anexartisias Studios, view 2" loading="lazy"></a>
+      <a href="images/anexartisias-studios/Project-2-9.jpg" target="_blank" rel="noopener"><img src="images/anexartisias-studios/Project-2-9.jpg" alt="Anexartisias Studios, view 3" loading="lazy"></a>
+      <a href="images/anexartisias-studios/Project-2-13.jpg" target="_blank" rel="noopener"><img src="images/anexartisias-studios/Project-2-13.jpg" alt="Anexartisias Studios, view 4" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta frame on-dark">
+  <div class="wrap">
+    <h2>Interested in Anexartisias Studios?</h2>
+    <a href="contact.html" class="btn">Contact us</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="logo"><img src="images/logo/logo-white.png" alt="Alef Beta Properties"></p>
+      <p>Origenous 2<br>Limassol, CY, 3035</p>
+    </div>
+    <div>
+      <p><a href="tel:+35797796811">(357) 97 796811</a></p>
+      <p><a href="mailto:info@alefbetaproperties.com">info@alefbetaproperties.com</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="copyright">© Alef Beta Properties. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('main-nav');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+</body>
+</html>
