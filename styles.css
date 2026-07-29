@@ -252,6 +252,16 @@ section { padding: 90px 0; }
 .project-hero-inner h1 { color: var(--paper); margin-bottom: 0.2em; }
 .project-hero-inner .status-tag { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.06em; color: var(--paper); border: 1px solid var(--line); padding: 4px 10px; display: inline-block; margin-top: 6px; }
 
+/* Collaborator credit line */
+.credit-line { border-top: 1px solid var(--stone-light); border-bottom: 1px solid var(--stone-light); padding: 28px 0; margin: 0; }
+.credit-line .eyebrow { margin-bottom: 0.6em; }
+.credit-line p { font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--charcoal); margin: 0; max-width: 70ch; }
+
+/* Brochure download */
+.brochure-link { display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.03em; color: var(--teal); border: 1px solid var(--teal); padding: 13px 24px; margin-top: 22px; transition: background 0.15s ease, color 0.15s ease; }
+.brochure-link:hover { background: var(--teal); color: var(--paper); }
+.brochure-link svg { width: 14px; height: 14px; flex: none; }
+
 /* Photo gallery grid */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 32px 0; }
 .gallery-grid a { display: block; aspect-ratio: 4/3; overflow: hidden; border: 1px solid var(--stone-light); }
