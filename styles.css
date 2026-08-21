@@ -268,12 +268,60 @@ section { padding: 90px 0; }
 .brochure-link:hover { background: var(--teal); color: var(--paper); }
 .brochure-link svg { width: 14px; height: 14px; flex: none; }
 
-/* Photo gallery grid */
+/* Photo gallery grid (floor plans, unit comparisons) */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 32px 0; }
 .gallery-grid a { display: block; aspect-ratio: 4/3; overflow: hidden; border: 1px solid var(--stone-light); }
 .gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
 .gallery-grid a:hover img { transform: scale(1.05); }
 @media (max-width: 700px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Photo carousel (project galleries) */
+.carousel { margin: 32px 0; }
+.carousel-viewport { position: relative; }
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  border: 1px solid var(--stone-light);
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-slide { flex: 0 0 100%; scroll-snap-align: start; aspect-ratio: 16/9; overflow: hidden; display: block; }
+.carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--stone-light);
+  background: rgba(246,241,231,0.85);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.carousel-arrow:hover { background: var(--teal); color: var(--paper); border-color: var(--teal); }
+.carousel-arrow svg { width: 18px; height: 18px; }
+.carousel-prev { left: 14px; }
+.carousel-next { right: 14px; }
+.carousel-dots { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
+.carousel-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--stone);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.carousel-dots button.active { background: var(--teal); border-color: var(--teal); }
+.carousel.single .carousel-arrow, .carousel.single .carousel-dots { display: none; }
+@media (max-width: 700px) { .carousel-arrow { width: 36px; height: 36px; } }
 
 /* Service cards (full services page) */
 .service-card { background: var(--paper); padding: 26px 22px; }

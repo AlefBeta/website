@@ -83,12 +83,65 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
+  function initCarousels() {
+    var carousels = document.querySelectorAll('[data-carousel]');
+    carousels.forEach(function (carousel) {
+      var track = carousel.querySelector('.carousel-track');
+      var slides = Array.prototype.slice.call(track.children);
+      if (slides.length <= 1) {
+        carousel.classList.add('single');
+        return;
+      }
+
+      var prev = carousel.querySelector('.carousel-prev');
+      var next = carousel.querySelector('.carousel-next');
+      var dotsWrap = carousel.querySelector('.carousel-dots');
+
+      slides.forEach(function (_, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Go to image ' + (i + 1) + ' of ' + slides.length);
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', function () { scrollToSlide(i); });
+        dotsWrap.appendChild(dot);
+      });
+      var dots = Array.prototype.slice.call(dotsWrap.children);
+
+      function scrollToSlide(i) {
+        track.scrollTo({ left: slides[i].offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
+      function currentIndex() {
+        var scrollLeft = track.scrollLeft;
+        var closest = 0;
+        var min = Infinity;
+        slides.forEach(function (slide, i) {
+          var d = Math.abs(slide.offsetLeft - scrollLeft);
+          if (d < min) { min = d; closest = i; }
+        });
+        return closest;
+      }
+      function updateDots() {
+        var idx = currentIndex();
+        dots.forEach(function (d, i) { d.classList.toggle('active', i === idx); });
+      }
+      prev.addEventListener('click', function () { scrollToSlide(Math.max(0, currentIndex() - 1)); });
+      next.addEventListener('click', function () { scrollToSlide(Math.min(slides.length - 1, currentIndex() + 1)); });
+
+      var scrollTimeout;
+      track.addEventListener('scroll', function () {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(updateDots, 100);
+      });
+    });
+  }
+
   function ready(fn) {
     if (document.readyState !== 'loading') fn();
     else document.addEventListener('DOMContentLoaded', fn);
   }
 
   ready(function () {
+    initCarousels();
     if (reduceMotion || !canObserve) return;
     initCountUp();
     initWordReveal();
