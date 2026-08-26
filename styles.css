@@ -241,6 +241,7 @@ section { padding: 90px 0; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding-bottom: 30px; border-bottom: 1px solid var(--ink-2); }
 .footer-inner .logo img { height: 46px; }
 .footer-inner p { color: var(--stone-light); }
+.footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 6px 0 0; }
 .footer-inner a:hover { color: var(--paper); }
 .copyright { font-size: 0.8rem; color: var(--stone-light); padding-top: 20px; margin: 0; }
 
