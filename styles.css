@@ -364,6 +364,9 @@ section { padding: 90px 0; }
 .contact-form textarea { resize: vertical; min-height: 140px; }
 .contact-form .btn { border: none; cursor: pointer; }
 .form-note { font-size: 0.82rem; color: var(--stone); margin-top: 12px; }
+.form-success { max-width: 620px; margin-top: 8px; padding: 32px 28px; background: var(--paper); border: 1px solid var(--stone-light); }
+.form-success h3 { margin: 0 0 0.4em; }
+.form-success p { margin: 0; color: var(--stone); }
 
 /* Word-reveal headings (progressive enhancement via animate.js) */
 .reveal-words .word { display: inline-block; overflow: hidden; vertical-align: top; }
