@@ -60,7 +60,7 @@
   <div class="wrap">
     <span class="eyebrow">SEND AN ENQUIRY</span>
     <h2 class="reveal-words">Send us an enquiry.</h2>
-    <form class="contact-form" action="mailto:info@alefbetaproperties.com" method="post" enctype="text/plain">
+    <form class="contact-form" id="contact-form">
       <div class="field">
         <label for="name">NAME</label>
         <input type="text" id="name" name="name" required>
@@ -107,6 +107,22 @@
     toggle.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open);
+    });
+  }
+
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var message = document.getElementById('message').value;
+      var subject = 'Website enquiry from ' + name;
+      var body = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage:\n' + message;
+      window.location.href = 'mailto:info@alefbetaproperties.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
     });
   }
 </script>
