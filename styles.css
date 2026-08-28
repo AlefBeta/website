@@ -236,23 +236,24 @@ section { padding: 90px 0; }
 
 .site-footer { background: var(--ink); color: var(--stone-light); }
 
-.footer-cta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 44px 24px; }
+.footer-cta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 28px; padding: 44px 24px; }
 .footer-cta h2 { color: var(--paper); margin: 0; }
 .footer-cta .link-arrow { color: var(--stone-light); border-bottom-color: var(--stone-light); }
 .footer-cta .link-arrow:hover { color: var(--paper); border-bottom-color: var(--paper); }
 
-.footer-columns { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 24px; padding: 36px 24px; border-top: 1px solid var(--ink-2); }
+.footer-columns { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; padding: 36px 24px; border-top: 1px solid var(--ink-2); }
 .footer-columns .logo img { height: 40px; }
 .footer-columns .logo { margin-bottom: 6px; }
 .footer-columns p { color: var(--stone-light); font-size: 0.92rem; margin: 0 0 6px; }
 .footer-columns p:last-child { margin-bottom: 0; }
-.footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 0 0 10px; }
+.footer-columns .eyebrow { color: var(--stone-light); opacity: 0.55; margin-bottom: 6px; }
+.footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 0; }
 .footer-nav, .footer-contact { display: flex; flex-direction: column; gap: 8px; }
 .footer-contact p { margin: 0; }
 .footer-nav a, .footer-contact a { color: var(--stone-light); font-size: 0.92rem; }
 .footer-nav a:hover, .footer-contact a:hover { color: var(--paper); }
 
-.footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 18px 24px; border-top: 1px solid var(--ink-2); }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 26px 24px; border-top: 1px solid var(--ink-2); }
 .copyright { font-size: 0.8rem; color: var(--stone-light); margin: 0; }
 
 @media (max-width: 760px) {
