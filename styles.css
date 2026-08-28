@@ -242,8 +242,9 @@ section { padding: 90px 0; }
 .site-footer { background: var(--ink); color: var(--stone-light); padding: 60px 0 30px; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding-bottom: 30px; border-bottom: 1px solid var(--ink-2); }
 .footer-inner .logo img { height: 46px; }
+.footer-inner .logo { margin-bottom: 6px; }
 .footer-inner p { color: var(--stone-light); font-size: 0.92rem; }
-.footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 6px 0 14px; }
+.footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 0 0 14px; }
 .footer-inner > div:first-child p:last-child { margin-bottom: 0; }
 .footer-inner > div:last-child p { margin: 0 0 8px; }
 .footer-inner > div:last-child p:last-child { margin-bottom: 0; }
