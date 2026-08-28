@@ -158,6 +158,8 @@ p { margin: 0 0 1em; color: var(--charcoal); }
 .btn:hover { opacity: 0.85; }
 .hero .btn { background: transparent; border-color: var(--line); color: var(--paper); }
 .hero .btn:hover { background: var(--line); color: var(--ink); }
+.cta .btn { background: transparent; border-color: var(--line); color: var(--paper); }
+.cta .btn:hover { background: var(--line); color: var(--ink); }
 
 /* Stats */
 .stats { border-bottom: 1px solid var(--stone-light); }
@@ -240,7 +242,7 @@ section { padding: 90px 0; }
 .site-footer { background: var(--ink); color: var(--stone-light); padding: 60px 0 30px; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding-bottom: 30px; border-bottom: 1px solid var(--ink-2); }
 .footer-inner .logo img { height: 46px; }
-.footer-inner p { color: var(--stone-light); }
+.footer-inner p { color: var(--stone-light); font-size: 0.92rem; }
 .footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 6px 0 0; }
 .footer-inner a:hover { color: var(--paper); }
 .copyright { font-size: 0.8rem; color: var(--stone-light); padding-top: 20px; margin: 0; }
