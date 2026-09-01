@@ -241,9 +241,9 @@ section { padding: 90px 0; }
 .footer-columns .logo { margin-bottom: 6px; }
 .footer-columns p { color: var(--stone-light); font-size: 0.92rem; margin: 0 0 6px; }
 .footer-columns p:last-child { margin-bottom: 0; }
-.footer-columns .eyebrow { color: var(--stone-light); opacity: 0.55; margin-bottom: 6px; }
+.footer-columns .eyebrow { color: var(--stone-light); opacity: 0.55; margin-bottom: 4px; }
 .footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 0; }
-.footer-contact { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.footer-contact { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .footer-contact p { margin: 0; }
 .footer-contact a { color: var(--stone-light); font-size: 0.92rem; }
 .footer-contact a:hover { color: var(--paper); }
