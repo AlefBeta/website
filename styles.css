@@ -236,24 +236,23 @@ section { padding: 90px 0; }
 
 .site-footer { background: var(--ink); color: var(--stone-light); }
 
-.footer-columns { display: flex; flex-wrap: wrap; gap: 64px; padding: 44px 24px 36px; }
-.footer-columns > div:first-child { text-align: center; }
+.footer-columns { display: flex; flex-wrap: wrap; justify-content: center; text-align: center; gap: 80px; padding: 48px 24px 40px; }
 .footer-columns .logo img { height: 40px; }
 .footer-columns .logo { margin-bottom: 6px; }
 .footer-columns p { color: var(--stone-light); font-size: 0.92rem; margin: 0 0 6px; }
 .footer-columns p:last-child { margin-bottom: 0; }
 .footer-columns .eyebrow { color: var(--stone-light); opacity: 0.55; margin-bottom: 6px; }
 .footer-descriptor { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--stone-light); margin: 0; }
-.footer-contact { display: flex; flex-direction: column; gap: 8px; }
+.footer-contact { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .footer-contact p { margin: 0; }
 .footer-contact a { color: var(--stone-light); font-size: 0.92rem; }
 .footer-contact a:hover { color: var(--paper); }
 
-.footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 26px 24px; border-top: 1px solid var(--ink-2); }
+.footer-bottom { display: flex; align-items: center; justify-content: center; padding: 26px 24px; border-top: 1px solid var(--ink-2); }
 .copyright { font-size: 0.8rem; color: var(--stone-light); margin: 0; }
 
 @media (max-width: 760px) {
-  .footer-columns { flex-direction: column; gap: 28px; }
+  .footer-columns { flex-direction: column; gap: 32px; }
 }
 
 /* Spec table (project pages) */
