@@ -241,7 +241,7 @@ section { padding: 90px 0; }
 .footer-cta .link-arrow { color: var(--stone-light); border-bottom-color: var(--stone-light); }
 .footer-cta .link-arrow:hover { color: var(--paper); border-bottom-color: var(--paper); }
 
-.footer-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 36px 24px; border-top: 1px solid var(--ink-2); }
+.footer-columns { display: flex; flex-wrap: wrap; gap: 64px; padding: 36px 24px; border-top: 1px solid var(--ink-2); }
 .footer-columns > div:first-child { text-align: center; }
 .footer-columns .logo img { height: 40px; }
 .footer-columns .logo { margin-bottom: 6px; }
@@ -258,7 +258,7 @@ section { padding: 90px 0; }
 .copyright { font-size: 0.8rem; color: var(--stone-light); margin: 0; }
 
 @media (max-width: 760px) {
-  .footer-columns { grid-template-columns: 1fr; gap: 28px; }
+  .footer-columns { flex-direction: column; gap: 28px; }
 }
 
 /* Spec table (project pages) */
